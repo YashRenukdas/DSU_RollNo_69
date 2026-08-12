@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main(){
+	char str[50], ch;
+	int i, count = 0;
+	
+	printf("Enter a string: ");
+	gets(str);
+	
+	printf("Enter character to search for: ");
+	scanf("%c", &ch);
+	
+	for(i = 0; str[i] != '\0'; i++){
+		if(str[i] == ch){
+			count++;
+		}
+	}
+	
+	printf("Frequency of character: %d", count);
+	return 0;
+}
